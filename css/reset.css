@@ -50,6 +50,8 @@ a {
 	text-decoration: none;
 }
 button {
+	padding: 0;
 	background-color: transparent;
 	border: none;
+	cursor: pointer;
 }
