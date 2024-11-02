@@ -4,102 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SaaSto</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="container/reset.css">
+    <link rel="stylesheet" href="container/container.css">
+
+    <link rel="stylesheet" href="nav/nav.css">
+    <link rel="stylesheet" href="nav/__link/nav__link.css">
+    <link rel="stylesheet" href="nav/__link/_selected/nav__link_selected.css">
+    <link rel="stylesheet" href="nav/__down-arrow/nav__down-arrow.css">
+    <link rel="stylesheet" href="nav/__down-arrow/_selected/nav__down-arrow_selected.css">
+
+    <link rel="stylesheet" href="header/header.css">
+    <link rel="stylesheet" href="header/__btn/header__btn.css">
+    <link rel="stylesheet" href="header/__signup-btn/header__signup-btn.css">
+
+    <link rel="stylesheet" href="main/main.css">
+    <link rel="stylesheet" href="main/__img/main__img.css">
+    <link rel="stylesheet" href="main/__img/_left/main__img_left.css">
+    <link rel="stylesheet" href="main/__img/_right/main__img_right.css">
+    <link rel="stylesheet" href="main/__title/main__title.css">
+    <link rel="stylesheet" href="main/__title/_colored/main__title_colored.css">
+    <link rel="stylesheet" href="main/__text/main__text.css">
+    <link rel="stylesheet" href="main/__button/main__button.css">
+
+    <link rel="stylesheet" href="footer/footer.css">
+    <link rel="stylesheet" href="footer/__item/footer__item.css">
+    <link rel="stylesheet" href="footer/__icon/footer__icon.css">
+    <link rel="stylesheet" href="footer/__icon/_user/footer__icon_user.css">
+    <link rel="stylesheet" href="footer/__icon/_download/footer__icon_download.css">
+    <link rel="stylesheet" href="footer/__icon/_customer/footer__icon_customer.css">
+    <link rel="stylesheet" href="footer/__content/footer__content.css">
+    <link rel="stylesheet" href="footer/__title/footer__title.css">
+    <link rel="stylesheet" href="footer/__text/footer__text.css">
+
 </head>
 <body>
-    <div class="main-container">
+    <div class="container">
         <header class="header">
-            <img src="img/logo.png" alt="SaaSto" class="logo">
+            <img src="logo/logo.png" alt="SaaSto" class="logo">
             <nav class="nav">
-                <div class="nav__item nav__dropdown selected">
-                    <a href="#">
+                <div class="nav__item">
+                    <a href="#" class="nav__link nav__link_selected">
                         Home
-                        <div class="down-arrow"></div>
+                        <div class="nav__down-arrow nav__down-arrow_selected"></div>
                     </a>
                 </div>
                 <div class="nav__item">
-                    <a href="#">
-                        About us
-                    </a>
+                    <a href="#" class="nav__link">About us</a>
                 </div>
-                <div class="nav__item nav__dropdown">
-                    <a href="#">
+                <div class="nav__item">
+                    <a href="#" class="nav__link">
                         Services
-                        <div class="down-arrow"></div>
-                    </a>
-                </div>
-                <div class="nav__item nav__dropdown">
-                    <a href="#">
-                        Blog
-                        <div class="down-arrow"></div>
+                        <div class="nav__down-arrow"></div>
                     </a>
                 </div>
                 <div class="nav__item">
-                    <a href="#">
-                        Contact us
+                    <a href="#" class="nav__link">
+                        Blog
+                        <div class="nav__down-arrow"></div>
                     </a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link">Contact us</a>
                 </div>
             </nav>
-            <div class="header__btns">
-                <button class="login-btn">Login</button>
-                <button class="signup-btn">Sign up</button>
+            <div class="header__buttons">
+                <button class=" header__btn header__login-btn">Login</button>
+                <button class=" header__btn header__signup-btn">Sign up</button>
             </div>
         </header>
-        <section class="main-section">
-            <img src="img/left-images.png" alt="dynamite" class="left-image">
-            <div class="main-section__content">
-                <h1>
+        <main class="main">
+            <img src="main/__img/_left/main__img_left.png" alt="dynamite" class="main__img main__img_left">
+            <img src="main/__img/_right/main__img_right.png" alt="card screens" class="main__img main__img_right">
+            <div class="main__content">
+                <h1 class="main__title">
                     Commited To People<br>
                     Commited To 
-                    <span>
+                    <span class="main__title_colored">
                         The<br>
                         Future
                     </span>
                 </h1>
-                <p>
+                <p class="main__text">
                     An enim nullam tempor sapien gravida donec enim<br>
                     ipsum porta justo  congue magna at 
                 </p>
-                <button>Get Started Now</button>
+                <button class="main__button">Get Started Now</button>
             </div>
-            <img src="img/card-screens.png" alt="card screens" class="card-screens-img">
-        </section>
+        </main>
         <footer class="footer">
             <div class="footer__item">
-                <div class="active-user-icon ic">
-                    <img src="img/active-user-icon.png" alt="active user">
+                <div class="footer__icon footer__icon_user">
+                    <img src="footer/__icon/_user/footer__icon_user.png" alt="user">
                 </div>
-                <div class="text">
-                    <h2>
-                        15k+
-                    </h2>
-                    <span>Active user</span>
+                <div class="footer__content">
+                    <h2 class="footer__title">15k+</h2>
+                    <span class="footer_text">Active user</span>
                 </div>
             </div>
             <div class="footer__item">
-                <div class="total-download-icon ic">
-                    <img src="img/total-download-icon.png" alt="total download">
+                <div class="footer__icon footer__icon_download">
+                    <img src="footer/__icon/_download/footer__icon_download.png" alt="download">
                 </div>
-                <div class="text">
-                    <h2>
-                        30k
-                    </h2>
-                    <span>Total download</span>
+                <div class="footer__content">
+                    <h2 class="footer__title">30k</h2>
+                    <span class="footer_text">Total download</span>
                 </div>
             </div>
             <div class="footer__item">
-                <div class="customer-icon ic">
-                    <img src="img/customer-icon.png" alt="customer">
+                <div class="footer__icon footer__icon_customer">
+                    <img src="footer/__icon/_customer/footer__icon_customer.png" alt="customer">
                 </div>
-                <div class="text">
-                    <h2>
-                        10k
-                    </h2>
-                    <span>Customer</span>
+                <div class="footer__content">
+                    <h2 class="footer__title">10k</h2>
+                    <span class="footer_text">Customer</span>
                 </div>
             </div>
         </footer>
