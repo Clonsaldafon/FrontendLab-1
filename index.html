@@ -19,17 +19,21 @@
     <link rel="stylesheet" href="nav/__down-arrow/_selected/nav__down-arrow_selected.css">
 
     <link rel="stylesheet" href="header/header.css">
-    <link rel="stylesheet" href="header/__btn/header__btn.css">
-    <link rel="stylesheet" href="header/__signup-btn/header__signup-btn.css">
+    
+    <link rel="stylesheet" href="auth-btn/auth-btn.css">
+    <link rel="stylesheet" href="auth-btn/_signup/auth-btn_signup.css">
 
-    <link rel="stylesheet" href="main/main.css">
     <link rel="stylesheet" href="main/__img/main__img.css">
     <link rel="stylesheet" href="main/__img/_left/main__img_left.css">
     <link rel="stylesheet" href="main/__img/_right/main__img_right.css">
-    <link rel="stylesheet" href="main/__title/main__title.css">
-    <link rel="stylesheet" href="main/__title/_colored/main__title_colored.css">
-    <link rel="stylesheet" href="main/__text/main__text.css">
+    <link rel="stylesheet" href="main/__content/main__content.css">
+    <link rel="stylesheet" href="main/__description/main__description.css">
     <link rel="stylesheet" href="main/__button/main__button.css">
+
+    <link rel="stylesheet" href="title/title.css">
+    <link rel="stylesheet" href="title/_colored/title_colored.css">
+    <link rel="stylesheet" href="description/description.css">
+    <link rel="stylesheet" href="start-btn/start-btn.css">
 
     <link rel="stylesheet" href="footer/footer.css">
     <link rel="stylesheet" href="footer/__item/footer__item.css">
@@ -72,28 +76,32 @@
                     <a href="#" class="nav__link">Contact us</a>
                 </div>
             </nav>
-            <div class="header__buttons">
-                <button class=" header__btn header__login-btn">Login</button>
-                <button class=" header__btn header__signup-btn">Sign up</button>
+            <div class="header__btns">
+                <button class="auth-btn auth-btn_login">Login</button>
+                <button class="auth-btn auth-btn_signup">Sign up</button>
             </div>
         </header>
         <main class="main">
             <img src="main/__img/_left/main__img_left.png" alt="dynamite" class="main__img main__img_left">
             <img src="main/__img/_right/main__img_right.png" alt="card screens" class="main__img main__img_right">
             <div class="main__content">
-                <h1 class="main__title">
+                <h1 class="title">
                     Commited To People<br>
                     Commited To 
-                    <span class="main__title_colored">
+                    <span class="title_colored">
                         The<br>
                         Future
                     </span>
                 </h1>
-                <p class="main__text">
-                    An enim nullam tempor sapien gravida donec enim<br>
-                    ipsum porta justo  congue magna at 
-                </p>
-                <button class="main__button">Get Started Now</button>
+                <div class="main__description">
+                    <p class="description">
+                        An enim nullam tempor sapien gravida donec enim<br>
+                        ipsum porta justo  congue magna at 
+                    </p>
+                </div>
+                <div class="main__button">
+                    <button class="start-btn">Get Started Now</button>
+                </div>
             </div>
         </main>
         <footer class="footer">
@@ -103,7 +111,7 @@
                 </div>
                 <div class="footer__content">
                     <h2 class="footer__title">15k+</h2>
-                    <span class="footer_text">Active user</span>
+                    <span class="footer__text">Active user</span>
                 </div>
             </div>
             <div class="footer__item">
@@ -112,7 +120,7 @@
                 </div>
                 <div class="footer__content">
                     <h2 class="footer__title">30k</h2>
-                    <span class="footer_text">Total download</span>
+                    <span class="footer__text">Total download</span>
                 </div>
             </div>
             <div class="footer__item">
@@ -121,7 +129,7 @@
                 </div>
                 <div class="footer__content">
                     <h2 class="footer__title">10k</h2>
-                    <span class="footer_text">Customer</span>
+                    <span class="footer__text">Customer</span>
                 </div>
             </div>
         </footer>
